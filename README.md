@@ -1,4 +1,6 @@
 _**Uber Data Analysis**_
+![image](https://github.com/Sangamesh-dev/CodeClauseInternship_UberDataAnalysis/assets/68049874/1185c2bc-5ddc-4808-aca0-f38e39353742)
+
 
 **Introduction:**
 
@@ -27,23 +29,50 @@ Before you can perform data analysis, ensure you have the following prerequisite
 - Seaborn
 
 **You can install these dependencies using pip:**
-pip install pandas matplotlib seaborn jupyter
+pip install pandas matplotlib seaborn 
 
-**Installation**
-1. Clone this repository to your local machine:
-git clone https://github.com/yourusername/uber-data-analysis.git
+**Project Overview**
+The project performs data analysis on Uber ride data, with the following key tasks:
 
-2. Change to the project directory:
-cd uber-data-analysis
+_1. Data Loading:_
+Loads Uber ride data from a CSV file (uberdrive.csv).
 
-3. Download the dataset from the provided link and place it in the data/ directory.
-Launch Jupyter Notebook to explore the analysis notebooks:
-jupyter notebook
+_2. Data Exploration:_
+- Displays the first 10 and last 10 rows of the dataset.
+- Calculates and displays the shape of the dataset.
+- Checks for missing values in the dataset.
+- Drops rows with missing values.
+- Provides basic statistical summaries of the dataset using describe().
 
+_3. Exploratory Data Analysis (EDA):_
+- Investigates unique values in the "START*" and "STOP*" columns.
+- Counts the occurrences of unique starting and stopping destinations.
+- Identifies the most frequent starting and stopping destinations.
+- Explores the purpose of trips and calculates the total miles for each purpose.
+- Visualizes the total miles for each trip purpose using bar charts.
+- Analyzes the distribution of trips by category.
 
-**Data Analysis**
-Exploratory Data Analysis (EDA)
-Explore the provided Jupyter notebooks to perform exploratory data analysis (EDA) on the Uber dataset. The notebooks cover various aspects of the data, including summary statistics, data cleaning, and visualization.
+**Usage**
+To use the Uber Data Analysis code:
+
+- Ensure you have the prerequisites installed.
+- Run the Python script uber_data_analysis.py.
+- The code will load the dataset and perform the specified data analysis tasks.
+- Visualizations will be displayed using Matplotlib and Seaborn.
+
+**Project Structure**
+The project is organized as follows:
+
+- uber_data_analysis.py: Main Python script for data analysis.
+- dataset/uberdrive.csv: Dataset containing Uber ride data.
+- README.md: This README file.
+
+**Dependencies**
+This project uses the following Python libraries and packages:
+
+- Pandas: Data manipulation and analysis library.
+- Matplotlib: Data visualization library for creating plots and charts.
+- Seaborn: Data visualization library built on Matplotlib for enhanced visualizations.
 
 **Key Insights**
 Here are some key insights you can expect to gain from this analysis:
